@@ -4,28 +4,28 @@
   <div class="row justify-content-center">
     <div class="col-md-8 ">
       <div class="card">
-        <div class="card-header">Display all items</div>
+        <div class="card-header">Display all Events</div>
         <div class="card-body">
           <table class="table table-striped" border="1">
             <tr>
-              <th>Item type </th>
+              <th>Event</th>
               <td>{{$items->category}}</td>
             </tr>
             <tr>
-              <th>Found Time </th>
+              <th>Time </th>
               <td>{{$items->found_time}}</td>
             </tr>
             <tr>
-              <th>Found User </th>
+              <th>User </th>
               <td>{{$items->found_user}}</td>
             </tr>
             <tr>
-              <th>Found Place </th>
+              <th>Place </th>
               <td>{{$items->found_place}}</td>
             </tr>
             <tr>
-              <th>Colour </th>
-              <td>{{$items->colour}}</td>
+              <th>Organiser </th>
+              <td>{{$items->organiser}}</td>
             </tr>
             <tr>
               <th>Notes </th>

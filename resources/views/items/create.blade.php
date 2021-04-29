@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10 ">
             <div class="card">
-                <div class="card-header">Create an new vehicle</div>
+                <div class="card-header">Create</div>
                 <!-- display the errors -->
                 @if ($errors->any())
                 <div class="alert alert-danger">
@@ -24,35 +24,35 @@
                     <form class="form-horizontal" method="POST" action="{{url('items') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="col-md-8">
-                            <label>Item Type</label>
+                            <label>Event Type</label>
                             <select name="category">
-                                <option value="pet">Pet</option>
-                                <option value="phone">Phone</option>
-                                <option value="jewellery">Jewellery</option>
+                                <option value="sport">Sport</option>
+                                <option value="culture">Culture</option>
+                                <option value="others">Others</option>
                             </select>
                         </div>
                         <div class="col-md-8">
-                            <label>Found Time</label>
+                            <label>Time</label>
                             <input type="datetime" name="found_time" placeholder="yyyy-mm-dd hh:mm:ss" value="" />
                         </div>
                         <div class="col-md-8">
-                            <label>Found User</label>
-                            <input type="text" name="found_user" placeholder="Found User" />
+                            <label>User</label>
+                            <input type="text" name="found_user" placeholder="User" />
                         </div>
                         <div class="col-md-8">
-                            <label>Found Place</label>
-                            <input type="text" name="found_place" placeholder="Found Place" />
+                            <label>Venue</label>
+                            <input type="text" name="found_place" placeholder="Venue" />
                         </div>
                         <div class="col-md-8">
-                            <label>Colour</label>
-                            <input type="text" name="colour" placeholder="Colour" />
+                            <label>Organiser</label>
+                            <input type="text" name="organiser" placeholder="Organiser" />
                         </div>
                         <div class="col-md-8">
                             <label>Description</label><br>
-                            <textarea rows="4" cols="50" name="description"> Notes about the item </textarea>
+                            <textarea rows="4" cols="50" placeholder="Description"></textarea>
                         </div>
                         <div class="col-md-8">
-                            <label>Image(</label>
+                            <label>Image</label>
                             <input type="file" name="image" placeholder="Image" />
                         </div>
                         <div class="col-md-6 col-md-offset-4">

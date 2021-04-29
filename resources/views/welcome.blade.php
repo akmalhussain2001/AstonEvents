@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>FIND LOST</title>
+    <title>ASTON EVENTS</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -14,7 +14,7 @@
     <style>
         html,
         body {
-            background-image: url("\snowleopard.jpg");
+            background-image: url("astonuni2.jpeg");
 
             background-color: #fff;
             color: #636b6f;
@@ -55,8 +55,8 @@
         }
 
         .links>a {
-            color: white;
-            padding: 0 25px;
+            color: black;
+            padding: 0 55px;
             font-size: 20px;
             font-weight: bold;
             letter-spacing: .1rem;
@@ -66,6 +66,36 @@
 
         .m-b-md {
             margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 144pt;
+            font-family: 'Luckiest Guy';
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-shadow: 0px -6px 0 #212121,
+                0px -6px 0 #212121,
+                0px 6px 0 #212121,
+                0px 6px 0 #212121,
+                -6px 0px 0 #212121,
+                6px 0px 0 #212121,
+                -6px 0px 0 #212121,
+                6px 0px 0 #212121,
+                -6px -6px 0 #212121,
+                6px -6px 0 #212121,
+                -6px 6px 0 #212121,
+                6px 6px 0 #212121,
+                -6px 18px 0 #212121,
+                0px 18px 0 #212121,
+                6px 18px 0 #212121,
+                0 19px 1px rgba(0, 0, 0, .1),
+                0 0 6px rgba(0, 0, 0, .1),
+                0 6px 3px rgba(0, 0, 0, .3),
+                0 12px 6px rgba(0, 0, 0, .2),
+                0 18px 18px rgba(0, 0, 0, .25),
+                0 24px 24px rgba(0, 0, 0, .2),
+                0 36px 36px rgba(0, 0, 0, .15);
         }
     </style>
 </head>
@@ -82,19 +112,14 @@
             @if (Route::has('register'))
             <a href="{{ route('register') }}" style="color:black">Register</a>
             @endif
-            <a href="{{ url('items') }}" style="color:black">View Lost Items</a>
+            <a href="{{ url('items') }}" style="color:black">View Events</a>
             @endauth
         </div>
         @endif
 
         <div class="content">
             <div class="title m-b-md">
-                FIND LOST
-            </div>
-
-            <div class="links">
-                <a href="{{ url('items') }}">Welcome to the find lost website. Find your lost items.</a>
-
+                <h1>Aston Events</h1>
             </div>
         </div>
     </div>

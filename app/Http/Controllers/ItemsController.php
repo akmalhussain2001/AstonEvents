@@ -66,7 +66,7 @@ class ItemsController extends Controller
     $item->found_time = $request->input('found_time');
     $item->found_user = $request->input('found_user');
     $item->found_place = $request->input('found_place');
-    $item->colour = $request->input('colour');
+    $item->organiser = $request->input('organiser');
     $item->description = $request->input('description');
     $item->image = $fileNameToStore;
 

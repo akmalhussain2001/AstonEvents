@@ -6,7 +6,7 @@
   <div class="row justify-content-center">
     <div class="col-md-10 ">
       <div class="card">
-        <div class="card-header">Request a lost item</div>
+        <div class="card-header">Request an event</div>
         <!-- display the errors -->
         @if ($errors->any())
         <div class="alert alert-danger">
@@ -36,7 +36,7 @@
             </div>
             <div class="col-md-8">
               <label>Reason for request</label><br>
-              <textarea rows="4" cols="50" name="reason"> Reason for requesting the item </textarea>
+              <textarea rows="4" cols="50" name="reason"> Reason for requesting event </textarea>
             </div>
             <div class="col-md-6 col-md-offset-4">
               <input type="submit" class="btn btn-primary" />

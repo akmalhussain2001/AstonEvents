@@ -15,11 +15,11 @@ class CreateItemsTable extends Migration
     {
       Schema::create('items', function (Blueprint $table) {
           $table->id();
-          $table->enum('category',['pet', 'phone', 'jewellery'])->default('pet');
+          $table->enum('category',['sport', 'culture', 'other'])->default('sport');
           $table->DateTime('found_time');
           $table->string('found_user', 30);
           $table->string('found_place', 256);
-          $table->string('colour', 20)->nullable();
+          $table->string('organiser', 20)->nullable();
           $table->string('description', 256)->nullable();
           $table->string('image', 256)->nullable();
           $table->timestamps();
